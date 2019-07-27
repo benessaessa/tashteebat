@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>تشطيبات</title>
+    </head>
+    <body>
+        <!-- Starting of Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark font-weight-bold p-2 fixed-top" dir="rtl">
+            <a class="navbar-brand mr-4 mt-0" href="#"><i class="fa fa-briefcase"></i> مملكة التشطيب </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+              
+            <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link ml-4" href="index.html"><i class="fa fa-home"></i> الرئيسية</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link ml-4" href="#"><i class="fa fa-edit"></i> من نحن </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-4" href="#"><i class="fa fa-briefcase"></i> عن الموقع </a>
+                    </li> -->
+                    
+                    <li class="nav-item">
+                        <a class="nav-link ml-4" href="workers.html" target="_blank"><i class="fa fa-users"></i> العمال </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-4" href="owners.html" target="_blank"><i class="fa fa-briefcase"></i> أصحاب العمل </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ml-4" href="#contact"><i class="fa fa-envelope"></i> الرسايل </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link ml-4" href="profile.html" target="_blank"><i class="fas fa-user-tie"></i> الصفحة الشخصية </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="" data-toggle="modal"  data-target="#login"> تسجيل الدخول <i class="fas fa-sign-out-alt"></i></a>
+                    </li>
+                    <li class="nav-item dropdown mr-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          تسجيل 
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="" data-toggle="modal"  data-target="#registration"> عامل </a>
+                            <a class="dropdown-item" href="" data-toggle="modal"  data-target="#registrationOwner"> صاحب عمل </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-success text-white"> English <i class="fa fa-language"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav><br><br>
+        <!-- Ending of Navbar -->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/1.jpg" alt="Los Angeles" width="1100" height="500">
+              <div class="carousel-caption">
+                <h3>تشطيبات فرع المنيا</h3>
+                <p>المقر : دروه - ملوي - المنيا</p>
+              </div>   
+            </div>
+            <div class="carousel-item">
+              <img src="images/2.jpg" alt="Chicago" width="1100" height="500">
+              <div class="carousel-caption">
+                <h3>تشطيبات فرع أسيوط </h3>
+                <p>المقر : أسيوط - أسيوط الجديدة </p>
+              </div>   
+            </div>
+            <div class="carousel-item">
+              <img src="images/3.jpg" alt="New York" width="1100" height="500">
+              <div class="carousel-caption">
+                <h3>تشطيبات فرع القاهرة</h3>
+                <p>القاهرة - مدينة نصر - الحي السادس</p>
+              </div>   
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+        <!-- Modal Login -->
+        <div class="modal" id="login">
+            <div class="modal-dialog slideDownAnimation">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <span> تسجيل الدخول </span>
+                        <i class='fa fa-lock p-3'> </i>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="modal-form">
+                          <div class="form-group" dir="rtl">
+                            <label for="mail-phone" class="d-flex justify-content-right"> قم بإدخل الإسم او رقم التليفون :</label>
+                            <input type="text" placeholder="من فضلك قم بإدخال رقم التليفون" class="form-control" id="mail-phone">
+                          </div>
+                            <div class="form-group" dir="rtl">
+                            <label for="pwd" class="d-flex justify-content-right"> كلمة المرور :</label>
+                            <input type="password" placeholder="كلمة المرور" name="password" class="form-control" id="pwd">
+                            </div>
+                            <div class="form-group form-check d-flex  flex-wrap justify-content-between">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox"> Remember me
+                            </label>
+                            <a href="">هل نسيت كلمة المرور ؟</a>
+                            </div>
+                                <input type="submit" class="btn btn-success" value=" تسجيل ">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Login -->      
+        <!-- registration as a worker -->
+        <div class="modal" id="registration">
+            <div class="modal-dialog slideDownAnimation">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <span> التسجيل عامل</span>
+                  <i class="fab fa-wpforms p-3"> </i>
+                </div>
+                <div class="modal-body">
+                  <form action="" class="modal-form">
+                    <div class="step1-registration">
+                      <div class="form-group">
+                          <input type="text" class="form-control" placeholder="الإسم" required>
+                      </div>
+                      <div class="form-group">
+                        <input type="tel" required name="phone" class="form-control" placeholder="رقم التليفون">
+                      </div>
+                      <div class="form-group">
+                        <select name="" id="" class="form-control"> المهنة
+                          <option value="" selected disabled>من فضلك قم بإختيار الحرفه</option>
+                          <option value="">carpenter</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <input type="password" name="password" class="form-control" required placeholder="كلمة المرور">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" required name="confirmpassword" class="form-control" placeholder="تأكيد كلمة المرور ">
+                      </div>
+                    </div>
+                    <div class="step2-registration">
+                      <label for="avatar"> من فضلك قم بتحميل صورة شخصية</label>
+                      <input type="file" class="btn btn-primary mb-2" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                      <div class="d-flex justify-content-between">
+                        <input type="submit" class="btn btn-success mt-0" value=" تسجيل ">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- End of registration in as a worker-->
+        <!-- Registration as an owner of work -->
+        <div class="modal" id="registrationOwner">
+            <div class="modal-dialog slideDownAnimation">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <span>  التسجيل كصاحب عمل</span>
+                  <i class="fab fa-wpforms p-3"> </i>
+                </div>
+                <div class="modal-body">
+                  <form action="" class="modal-form">
+                    <div class="step1-registration">
+                      <div class="form-group">
+                          <input type="text" class="form-control" placeholder="الإسم" required>
+                      </div>
+                      <div class="form-group">
+                        <input type="tel" required name="phone" class="form-control" placeholder="رقم التليفون">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" name="password" class="form-control" required placeholder="كلمة المرور">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" required name="confirmpassword" class="form-control" placeholder="تأكيد كلمة المرور ">
+                      </div>
+                    </div>
+                    <div class="step2-registration">
+                      <label for="avatar"> من فضلك قم بتحميل صورة شخصية</label>
+                      <input type="file" class="btn btn-primary mb-2" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                      <div class="d-flex justify-content-between">
+                        <input type="submit" class="btn btn-success mt-0" value=" تسجيل ">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- End of registration as an owner of work -->
+       
+        <!-- -------------------------------- -->
+    
+        <section class="idea_section pt-5 pb-5">
+            <div class="container">
+                <div class="text-center wow bounceIn line" data-wow-duration="2s" data-wow-delay="1s"><h3><span> عن الموقع </span></h3></div>
+                <div class="row" dir="rtl">
+                    <div class="col-lg-6 col-md-12 text-center wow bounceIn" data-wow-duration="2s" data-wow-delay="1s">
+                      <h1 class="pt-3">فكرتك من الورق للواقع</h1>
+                      <h4>التخطيط جزء أساسي من عملنا</h4><br>
+                      <p>لسنا جهة تنفيذية فقط فنحن نحول مشروعك أو فكرتك الابداعية الى واقع ملموس <br>ونساعدك بتخطيطه وبناء واجهاته وهويته البصرية وتنفيذه بشكله الكامل</p>
+                      <a href="#" class="btn btn-success"> اخبرنا عنها <i class="fa fa-edit"></i></a>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 wow bounceIn" data-wow-duration="2s" data-wow-delay="1s">
+                      <div class="ImgCenter">
+                        <img src="images/07.png" max-width="100%">
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------------------------------- -->
+        <section class="our-skils">
+            <h1 style="text-align: center;background-color:#46B4A5 ;text-transform: capitalize; padding: 3px;color: white;"><i class="fa fa-thumbs-up"></i> أفضل الصنايعية </h1>
+            <div class="container">
+             <div class="row text-right">
+                  <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-duration="2s" data-wow-offset="300">
+                    <div class="skils-progress">
+                      <h5> الإسم : محمد عيسي <i class=" fa fa-user fa-lg"></i>&nbsp;</h5>
+                   <ul class="list-unstyled">
+                  <li><img src="images/electrician.jpg"  width="100%" height="250px"></li><hr>
+                  </ul> 
+                  <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Rate : 90%</div>
+                  </div><hr>
+                  <ul class="list-unstyled">
+                     <li>العنوان : ملوي - المنيا <i class="fa fa-home fa-lg"></i>&shy;</li><hr>
+                     <li>رقم التليفون : 01114205243<i class="fa fa-phone fa-lg"></i>&shy; </li><hr>
+                     <li> المهنة : كهربائي<i class="fa fa-briefcase fa-lg"></i>&nbsp; </li>
+                     <hr>
+                    <li class="btn btn-primary btn-block">See Profile</li>
+                 </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 wow bounceInDown" data-wow-duration="2s" data-wow-offset="300"> 
+                <div class="skils-progress">
+                    <h5> الإسم : محمد عصام <i class=" fa fa-user fa-lg"></i>&nbsp;</h5>
+                    <ul class="list-unstyled">
+                      
+                      <li><img src="images/carpenter.jpg"  width="100%" height="250px"></li><hr>
+                    </ul>    
+                    <div class="progress">
+                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                    aria-valuenow="80" aria-valuein="0" aria-valuemax="100"
+                    style="width: 80%;" >Rate : 80%</div>
+                  </div><hr>
+                  <ul class="list-unstyled">
+                    <li>العنوان : أسيوط - سيد <i class="fa fa-home fa-lg"></i>&shy;</li><hr>
+                    <li>رقم التليفون : 01030281587<i class="fa fa-phone fa-lg"></i>&shy; </li><hr>
+                    <li> المهنة : نجار<i class="fa fa-briefcase fa-lg"></i>&nbsp; </li>
+                    <hr>
+                    <li class="btn btn-primary btn-block">See Profile</li>
+                  </ul>
+                </div>
+              </div>
+            <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-duration="2s" data-wow-offset="300">
+              <div class="skils-progress">
+                <h5> الإسم : محمود خلف <i class=" fa fa-user fa-lg"></i>&nbsp;</h5>
+                <ul class="list-unstyled">
+                 
+                  <li><img src="images/mason.jpg"  width="100%" height="250px"></li><hr>
+                </ul>    
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped
+                    active" role="progressbar"
+                    aria-valuenow="70" aria-valuein="0" aria-valuemax="100"
+                    style="width: 70%;" >Rate : 70%</div>
+                </div><hr>
+                <ul class="list-unstyled">
+                  <li>العنوان : ملوي - المنيا <i class="fa fa-home fa-lg"></i>&shy;</li><hr>
+                  <li>رقم التليفون : 01284578383<i class="fa fa-phone fa-lg"></i>&shy; </li><hr>
+                  <li> المهنة : بناء<i class="fa fa-briefcase fa-lg"></i>&nbsp; </li>
+                  <hr>
+                <li class="btn btn-primary btn-block">See Profile</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 wow bounceInDown" data-wow-duration="2s" data-wow-offset="300">
+              <div class="skils-progress">
+                <h5> الإسم : ياسمين سيد <i class=" fa fa-user fa-lg"></i>&nbsp;</h5>
+                  <ul class="list-unstyled">
+                  <li><img src="images/Cleaner.jpg"  width="100%" height="250px"></li><hr>
+                  </ul> 
+                  <div class="progress">
+                  <div class="progress-bar progress-bar-striped active" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Rate : 90%</div>
+                  </div><hr>
+                  <ul class="list-unstyled">
+                    <li>العنوان : القاهرة - عين شمس <i class="fa fa-home fa-lg"></i>&shy;</li><hr>
+                    <li>رقم التليفون : 01542649537<i class="fa fa-phone fa-lg"></i>&shy; </li><hr>
+                    <li> المهنة : عاملة نظافة<i class="fa fa-briefcase fa-lg"></i>&nbsp; </li>
+                    <hr>
+                   <li class="btn btn-primary btn-block">See Profile</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- --------------------------------------- -->
+        <section id="contact">
+          <br>
+            <div class="container wow fadeInUp">
+              <div class="section-header">
+                <div class="line"><h3><span> تواصل معنا  </span></h3></div>
+              </div>
+            </div>
+            <!-- Uncomment below if you wan to use dynamic maps -->
+            <div class="container wow fadeInUp mt-5">
+              <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4">
+                  <div class="info">
+                    <div>
+                      <i class="fa fa-map-marker"></i>
+                      <p>Minia - Mallawi<br>Egypt, Eg +20 286 271 0891</p>
+                    </div>
+      
+                    <div>
+                      <i class="fa fa-envelope"></i>
+                      <p>moh.essa2020@gmail.com</p>
+                    </div>
+      
+                    <div>
+                      <i class="fa fa-phone"></i>
+                      <p>+20 01030281587</p>
+                    </div>
+                  </div>
+      
+                  <div class="social-links">
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="fab fa-google-plus"></i></a>
+                    <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-md-8">
+                  <div class="form">
+                    <div id="sendmessage">Your message has been sent. Thank you!</div>
+                    <div id="errormessage"></div>
+                    <form  method="post" role="form" class="contactForm">
+                      <div class="form-group">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                          data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                        <div class="validation"></div>
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                          data-rule="email" data-msg="Please enter a valid email" />
+                        <div class="validation"></div>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                          data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                        <div class="validation"></div>
+                      </div>
+                      <div class="form-group">
+                        <textarea class="form-control" name="message" rows="5" data-rule="required"
+                          data-msg="Please write something for us" placeholder="Message"></textarea>
+                        <div class="validation"></div>
+                      </div>
+                      <div class="text-center"><button type="submit">Send Message</button><br></div><br>
+                    </form>
+                    
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <img src="images/me.jpg" width="100%">
+                </div>
+              </div>
+            </div>
+            <iframe src="https://maps.google.com/maps?q=Assuit&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>     
+        </section>
+        <!-- Footer -->
+        <footer class="footer text-center p-3 text-white">
+          <div class="fontaswems p-4">
+            <a href="#"><i class="fab fa-facebook-f fa-lg mr-5" aria-hidden="true"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-lg mr-5" aria-hidden="true"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-lg mr-5" aria-hidden="true"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-lg" aria-hidden="true"></i></a><br>
+          </div>
+          <h5>Copy Right &copy; Mohamed Essa</h5>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>new WOW().init();</script>
+    </body>
+</html>
